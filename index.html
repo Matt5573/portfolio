@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Portfolio de Matthieu KLESPERT, étudiant BTS SIO SISR : présentation, compétences, projets, contact.">
+  <title>Ton Nom - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header avec navigation -->
+  <header>
+    <img src="avatar.jpg" alt="Avatar" class="avatar">
+    <nav>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#profil">Profil</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Section accueil avec effet parallax -->
+  <section class="parallax section-blur-about" id="accueil">
+    <div class="parallax-content">
+      <h1>Matthieu KLESPERT</h1>
+      <h2>Etudiant BTS SIO SISR</h2>
+      <a href="#profil" class="cta">QUI-SUIS JE ?</a>
+    </div>
+  </section>
+
+  <!-- Section profil -->
+  <section class="section section-profil" id="profil">
+    <h2>Profil</h2>
+    <p>Je m'appelle Matthieu KLESPERT, j'ai 20 ans et suis en 1ère année de BTS SIO SISR au CNED. J'ai choisis cette filière afin de devenir administrateur réseaux, un métier que mon père m'a fait découvrir et que j'aimerai effectuer plus tard. Depuis que je suis tout petit j'ai toujours été derrière un ordinateur ce qui m'a permit d'avoir une compréhension rapide de l'environnement numérique. J'ai une petite âme créative et adore entamer des projets, dont un qui concerne le Web dont le site s'appelle Proffile Gaming.</p>
+  </section>
+
+  <!-- Section compétences -->
+  <section class="section section-competences" id="competences">
+    <h2>Compétences</h2>
+    <ul class="competences-list">
+        <p>Compétences apprises lors de stages au Conseil Départemental du Loiret en 2021 et 2025, d'études ou d'activités personnelles :</p>
+        <li>Gestion de parc : OCS Inventory, GLPI</li>
+        <li>Support aux utilisateurs et gestion des tickets d'incident : GLPI</li>
+        <li>Réseau :
+          <ul>
+            <li>Configuration de switch/commutateur et de routeur Cisco/Aruba en ligne de commande (CLI)</li>
+            <li>Configuration de pare-feux de marque Fortinet (FG61)</li>
+            <li>Installation de switch Cisco/Aruba et de bornes WIFI Nuclias</li>
+          </ul>
+        </li>
+        <li>Système et réseau :
+          <ul>
+            <li>Installation et configuration de base d'OS (Windows, Debian, Ubuntu)</li>
+            <li>Gestion des comptes et des groupes utilisateurs locaux : Windows 11, Debian, Ubuntu Desktop</li>
+            <li>Gestion des comptes, des groupes et des GPO dans un domaine Active Directory</li>
+            <li>Gestion de services d'impression et de sauvegarde : Microsoft Windows Server</li>
+          </ul>
+        </li>
+        <li>Installation du service Web : Apache 2 (Debian)</li>
+        <li>Installation de base de données : MariaDB (Debian)</li>
+        <li>Maîtrise des outils :
+          <ul>
+            <li>PuTTY</li>
+            <li>TFTP</li>
+            <li>Remote Desktop Manager</li>
+            <li>BMC</li>
+          </ul>
+        </li>
+      </ul>
+      <div class="skills">
+        <div class="skill">
+            <span>SQL</span>
+            <div class="progressbar-wrapper">
+              <div class="progressbar" style="width: 90%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+          <span>HTML</span>
+          <div class="progressbar-wrapper">
+            <div class="progressbar" style="width: 80%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>CSS</span>
+          <div class="progressbar-wrapper">
+            <div class="progressbar" style="width: 75%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+            <span>PHP</span>
+            <div class="progressbar-wrapper">
+              <div class="progressbar" style="width: 70%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+          <span>JavaScript</span>
+          <div class="progressbar-wrapper">
+            <div class="progressbar" style="width: 60%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+            <span>C#</span>
+            <div class="progressbar-wrapper">
+              <div class="progressbar" style="width: 50%;"></div>
+            </div>
+          </div>
+        <div class="skill">
+          <span>Python</span>
+          <div class="progressbar-wrapper">
+            <div class="progressbar" style="width: 30%;"></div>
+          </div>
+        </div>
+      </div>
+    <h3>Mon CV</h3>
+    <iframe src="CV 2025 Matt.pdf" width="100%" height="600px" style="border:1px solid #ccc;"></iframe>
+  </section>
+
+  <!-- Section portfolio -->
+  <section class="section section-portfolio" id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-project">
+        <h3>Profile Gaming</h3>
+        <p>
+          Site web communautaire dédié au gaming, en cours de développement.<br>
+          <strong>Fonctionnalités prévues :</strong> gestion de profils (setup, jeux possédés), forums, etc.<br>
+          <strong>Stack technique :</strong> HTML, CSS, JS, PHP, SQL
+        </p>
+        <div class="portfolio-img-wrapper">
+          <img src="Profile Gaming.jpg" alt="Capture d'écran du site Profile Gaming" class="portfolio-img">
+        </div>
+        <a href="https://profilegaming.klespert.fr:448" target="_blank" class="cta">Voir le site en ligne</a>
+      </div>
+  </section>
+
+  <!-- Section contact -->
+  <section class="section section-contact section-blur-contact" id="contact">
+    <h2>Contactez-moi</h2>
+    <p>N'hésitez pas à me contacter, je vous répondrai avec plaisir.</p>
+    <form class="contact-form" method="post" action="#">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="nom">Nom *</label>
+          <input type="text" id="nom" name="nom" required>
+        </div>
+        <div class="form-group">
+          <label for="prenom">Prénom</label>
+          <input type="text" id="prenom" name="prenom">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="email">E-Mail *</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="telephone">Téléphone</label>
+          <input type="tel" id="telephone" name="telephone">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="objet">Objet *</label>
+        <input type="text" id="objet" name="objet" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+      </div>
+      <p class="form-info">* Champ obligatoire</p>
+      <div class="form-group">
+        <label class="consent">
+          <input type="checkbox" required>
+          En soumettant ce formulaire, j'accepte que mes données personnelles soient utilisées pour me recontacter. Aucun autre traitement ne sera effectué avec mes informations. Pour connaître et exercer vos droits, veuillez consulter la Politique de confidentialité.
+        </label>
+      </div>
+      <button type="submit" class="cta">Envoyer</button>
+    </form>
+    <div class="contact-infos">
+      <p><strong>matthieu@klespert.fr</strong></p>
+      <p>07 87 26 93 52</p>
+      <p>45530 Vitry-aux-Loges</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 - Matthieu KLESPERT. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
