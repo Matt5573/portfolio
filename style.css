@@ -481,7 +481,119 @@ a:focus {
   .veille-list li {
     margin-bottom: 10px;
   }
+
+  .section-realisations {
+    background: linear-gradient(120deg, #1d1333 60%, #2d1846 100%);
+    color: #fff;
+  }
   
+  .realisation-card {
+    width: 100%;
+    max-width: 900px;
+    background: rgba(32, 13, 53, 0.45);
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 4px 24px #a259e633;
+    margin-bottom: 28px;
+  }
+  
+  .realisation-card h3 {
+    color: #a259e6;
+    margin-bottom: 18px;
+  }
+  
+  .realisation-block {
+    background: rgba(255, 255, 255, 0.06);
+    border-left: 4px solid #a259e6;
+    padding: 18px 20px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+  }
+  
+  .realisation-block h4 {
+    color: #fff;
+    margin-bottom: 8px;
+  }
+  
+  .realisation-block p {
+    margin: 0;
+    color: #e0e0f0;
+  }
+
+  .section-parcours {
+    background: linear-gradient(120deg, #1d1333 60%, #2d1846 100%);
+    color: #fff;
+  }
+  
+  .timeline {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin-top: 20px;
+    padding-left: 40px;
+  }
+  
+  .timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 18px;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, #a259e6 0%, #5f1d7a 100%);
+    border-radius: 10px;
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 35px;
+    padding-left: 45px;
+  }
+  
+  .timeline-item::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    width: 20px;
+    height: 20px;
+    background: #a259e6;
+    border: 4px solid #1d1333;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(162, 89, 230, 0.2);
+  }
+  
+  .timeline-year {
+    display: inline-block;
+    background: linear-gradient(90deg, #a259e6 0%, #5f1d7a 100%);
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 12px #a259e633;
+  }
+  
+  .timeline-content {
+    background: rgba(32, 13, 53, 0.45);
+    border-radius: 14px;
+    padding: 22px 24px;
+    box-shadow: 0 2px 16px #a259e622;
+  }
+  
+  .timeline-content h3 {
+    color: #a259e6;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .timeline-content p {
+    margin: 0;
+    color: #e0e0f0;
+    line-height: 1.7;
+  }
+
   @keyframes fadeInUp {
     to {
       opacity: 1;
