@@ -1,149 +1,135 @@
-Oui — je te fais les deux pages restructurées, sans changer le texte, avec une mise en page plus moderne, et je corrige aussi le problème du fichier xlsx qui se télécharge au lieu de s’afficher. Pour les logos des outils, je te mets une version propre avec des icônes via emojis/icônes HTML simples pour éviter de casser le site si tu n’as pas de bibliothèque d’icônes installée.
-
-Point important sur le fichier Excel
-Un navigateur n’affiche pas directement un .xlsx dans un <iframe> comme un PDF. Si tu veux éviter le téléchargement forcé, le plus propre est :
-
-soit d’utiliser un lien vers le fichier avec download retiré,
-
-soit de convertir le tableau en PDF,
-
-soit d’utiliser un aperçu Google Sheets si le fichier est hébergé en ligne.
-
-Donc je vais te mettre une version qui n’essaie plus de forcer le téléchargement direct, et je te donne aussi une structure plus clean.
-
-realisations.html
-xml
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="Réalisations professionnelles de Matthieu KLESPERT - Portfolio BTS SIO SISR.">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Matthieu Klespert - Réalisations professionnelles</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="header">
-    <div class="header-inner">
-      <img src="avatar.jpg" alt="Avatar de Matthieu Klespert" class="avatar">
-      <nav aria-label="Navigation principale" class="nav">
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="index.html#profil">Profil</a></li>
-          <li><a href="index.html#parcours">Parcours</a></li>
-          <li><a href="index.html#competences">Compétences</a></li>
-          <li><a href="realisations.html">Réalisations</a></li>
-          <li><a href="epreuve5.html">Epreuve 5</a></li>
-          <li><a href="index.html#veille">Veille technologique</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+  <header>
+    <img src="avatar.jpg" alt="Avatar de Matthieu Klespert" class="avatar">
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="index.html#profil">Profil</a></li>
+        <li><a href="index.html#parcours">Parcours</a></li>
+        <li><a href="index.html#competences">Compétences</a></li>
+        <li><a href="realisations.html">Réalisations</a></li>
+        <li><a href="epreuve5.html">Epreuve 5</a></li>
+        <li><a href="index.html#veille">Veille technologique</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
+  <section class="parallax section-blur-about">
+    <div class="parallax-content">
+      <h1>Réalisations professionnelles</h1>
+      <h2>Projets, stages et preuves de compétences</h2>
+    </div>
+  </section>
 
-    <section class="hero hero-small" id="accueil">
-      <div class="container hero-card">
-        <h1>Réalisations professionnelles</h1>
-        <h2>Projets, stages et preuves de compétences</h2>
+  <section class="section section-portfolio">
+    <div class="container">
+      <div class="section-heading">
+        <span class="section-label">Réalisations</span>
+        <h2>Réalisations professionnelles</h2>
       </div>
-    </section>
-
-    <section class="section">
-      <div class="container card">
-        <div class="section-heading">
-          <span class="section-label">Réalisations</span>
-          <h2>Réalisations professionnelles</h2>
-        </div>
-
-        <article class="realisation-card">
-          <h3>Atelier de professionnalisation - Infrastructure TiersLieux86</h3>
-
-          <div class="realisation-block">
-            <h4>Description rapide</h4>
-            <p>
-              Nous devions incarner le rôle d’un technicien chargé de mettre en place l’infrastructure système
-              (Windows Server et Active Directory) et réseau du site de Chasseneuil de TiersLieux86, puis la faire
-              évoluer afin d’accueillir un nouveau client, ValorElec (20 collaborateurs Direction / Commercial / R&D).
-              Nous avons utilisé des VM et des documents collaboratifs pour assurer le suivi du projet.
-            </p>
-          </div>
-
-          <div class="realisation-grid">
-            <div class="realisation-mini">
-              <h4>Type</h4>
-              <p>Atelier de professionnalisation</p>
-            </div>
-
-            <div class="realisation-mini">
-              <h4>Cadre</h4>
-              <p>CNED / BTS SIO SISR</p>
-            </div>
-
-            <div class="realisation-mini">
-              <h4>Période</h4>
-              <p>Décembre 2025 - Mars 2026</p>
-            </div>
-
-            <div class="realisation-mini">
-              <h4>Durée</h4>
-              <p>3 mois</p>
-            </div>
-          </div>
-
-          <div class="realisation-block">
-            <h4>Technologies concernées</h4>
-            <div class="tool-badges">
-              <span class="tool-badge">Cisco Packet Tracer</span>
-              <span class="tool-badge">Trello</span>
-              <span class="tool-badge">Google Drive</span>
-              <span class="tool-badge">Google Docs</span>
-              <span class="tool-badge">draw.io</span>
-              <span class="tool-badge">Excel</span>
-              <span class="tool-badge">Paint</span>
-              <span class="tool-badge">Windows Server 2022</span>
-              <span class="tool-badge">Windows Education 11</span>
-              <span class="tool-badge">VyOS</span>
-              <span class="tool-badge">TrueNAS</span>
-            </div>
-          </div>
-
-          <div class="realisation-block">
-            <h4>Compétences travaillées</h4>
-            <ul class="competences-list">
-              <li>Concevoir une solution d’infrastructure réseau.</li>
-              <li>Installer, tester et déployer une solution d’infrastructure réseau.</li>
-            </ul>
-          </div>
-
-          <div class="realisation-actions">
-            <a href="https://docs.google.com/document/d/1BXonxCaq7CLd1cP96H139T2EwXyQoyLYOGRtEeBzK30/edit?tab=t.0" target="_blank" class="cta">Consulter le contexte</a>
-            <a href="https://trello.com/b/Dim6qa9Y/atelier-1-et-2-de-professionalisation" target="_blank" class="cta">Consulter le compte rendu</a>
-          </div>
-        </article>
-
-        <article class="portfolio-project">
-          <h3>Profile Gaming</h3>
+  
+      <div class="realisation-card">
+        <h3>Atelier de professionnalisation - Infrastructure TiersLieux86</h3>
+  
+        <div class="realisation-block">
+          <h4>Description rapide</h4>
           <p>
-            Projet web communautaire dédié au gaming, en cours de développement.
+            Nous devions incarner le rôle d’un technicien chargé de mettre en place l’infrastructure système
+            (Windows Server et Active Directory) et réseau du site de Chasseneuil de TiersLieux86, puis la faire
+            évoluer afin d’accueillir un nouveau client, ValorElec (20 collaborateurs Direction / Commercial / R&D).
+            Nous avons utilisé des VM et des documents collaboratifs pour assurer le suivi du projet.
           </p>
-
-          <div class="portfolio-img-wrapper">
-            <img src="Profile Gaming.jpg" alt="Capture d'écran du projet Profile Gaming" class="portfolio-img">
+        </div>
+  
+        <div class="realisation-grid">
+          <div class="realisation-mini">
+            <h4>Type</h4>
+            <p>Atelier de professionnalisation</p>
           </div>
-
-          <a href="https://profilegaming.klespert.fr:448" target="_blank" class="cta">Voir le site en ligne</a>
-        </article>
+  
+          <div class="realisation-mini">
+            <h4>Cadre</h4>
+            <p>CNED / BTS SIO SISR</p>
+          </div>
+  
+          <div class="realisation-mini">
+            <h4>Période</h4>
+            <p>Décembre 2025 - Mars 2026</p>
+          </div>
+  
+          <div class="realisation-mini">
+            <h4>Durée</h4>
+            <p>À compléter</p>
+          </div>
+        </div>
+  
+        <div class="realisation-block">
+          <h4>Technologies concernées</h4>
+          <ul class="competences-list">
+            <li>Cisco Packet Tracer</li>
+            <li>Trello</li>
+            <li>Google Drive, Google Docs, draw.io</li>
+            <li>Excel</li>
+            <li>Paint</li>
+            <li>Windows Server 2022</li>
+            <li>Windows Education 11</li>
+            <li>VyOS</li>
+            <li>TrueNAS</li>
+          </ul>
+        </div>
+  
+        <div class="realisation-block">
+          <h4>Compétences travaillées</h4>
+          <ul class="competences-list">
+            <li>Concevoir une solution d’infrastructure réseau.</li>
+            <li>Installer, tester et déployer une solution d’infrastructure réseau.</li>
+          </ul>
+        </div>
+  
+        <div class="realisation-block">
+          <h4>Lien vers le contexte</h4>
+          <p>
+            <a href="https://docs.google.com/document/d/1BXonxCaq7CLd1cP96H139T2EwXyQoyLYOGRtEeBzK30/edit?tab=t.0"
+               target="_blank" class="cta">Consulter le contexte</a>
+          </p>
+        </div>
+  
+        <div class="realisation-block">
+          <h4>Compte rendu détaillé et illustré</h4>
+          <p>
+            <a href="https://trello.com/b/Dim6qa9Y/atelier-1-et-2-de-professionalisation"
+               target="_blank" class="cta">Consulter le compte rendu</a>
+          </p>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-  </main>
+    <div class="portfolio-project">
+      <h3>Profile Gaming</h3>
+      <p>
+        Projet web communautaire dédié au gaming, en cours de développement.
+      </p>
+      <div class="portfolio-img-wrapper">
+        <img src="Profile Gaming.jpg" alt="Capture d'écran du projet Profile Gaming" class="portfolio-img">
+      </div>
+      <a href="https://profilegaming.klespert.fr:448" target="_blank" class="cta">Voir le site en ligne</a>
+    </div>
+  </section>
 
-  <footer class="footer">
+  <footer>
     <p>&copy; 2025 - Matthieu KLESPERT. Tous droits réservés.</p>
   </footer>
-
 </body>
 </html>
