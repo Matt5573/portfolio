@@ -594,6 +594,37 @@ a:focus {
   line-height: 1.7;
 }
 
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.tech-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(162, 89, 230, 0.15);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+}
+
+.tech-item img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.tech-item span {
+  font-size: 0.98rem;
+  color: #f2ecff;
+  font-weight: 500;
+}
+
   @keyframes fadeInUp {
     to {
       opacity: 1;
