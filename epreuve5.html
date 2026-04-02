@@ -3,75 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="Épreuve 5 BTS SIO SISR de Matthieu KLESPERT : tableau de synthèse et vidéo de présentation.">
-  <title>Matthieu Klespert - Épreuve 5</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matthieu Klespert - Épreuve 5</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <img src="avatar.jpg" alt="Avatar de Matthieu Klespert" class="avatar">
-    <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="index.html#profil">Profil</a></li>
-        <li><a href="index.html#parcours">Parcours</a></li>
-        <li><a href="index.html#competences">Compétences</a></li>
-        <li><a href="realisations.html">Réalisations</a></li>
-        <li><a href="epreuve5.html">Épreuve 5</a></li>
-        <li><a href="index.html#veille">Veille technologique</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <header class="header">
+    <div class="header-inner">
+      <img src="avatar.jpg" alt="Avatar de Matthieu Klespert" class="avatar">
+      <nav aria-label="Navigation principale" class="nav">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="index.html#profil">Profil</a></li>
+          <li><a href="index.html#parcours">Parcours</a></li>
+          <li><a href="index.html#competences">Compétences</a></li>
+          <li><a href="realisations.html">Réalisations</a></li>
+          <li><a href="epreuve5.html">Épreuve 5</a></li>
+          <li><a href="index.html#veille">Veille technologique</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section class="parallax section-blur-about">
-    <div class="parallax-content">
-      <h1>Épreuve 5</h1>
-      <h2>Tableau de synthèse et support vidéo</h2>
-    </div>
-  </section>
+  <main>
 
-  <section class="section section-profil">
-    <h2>Tableau de synthèse</h2>
+    <section class="hero hero-small" id="accueil">
+      <div class="container hero-card">
+        <h1>Épreuve 5</h1>
+        <h2>Tableau de synthèse et support vidéo</h2>
+      </div>
+    </section>
 
-    <div class="portfolio-project">
-      <h3>Document de synthèse</h3>
-      <p>
-        Tu peux consulter ici le tableau de synthèse lié aux réalisations professionnelles.
-      </p>
+    <section class="section">
+      <div class="container card">
+        <h2>Tableau de synthèse</h2>
 
-      <iframe 
-        src="Tableau de synthese.xlsx" 
-        width="100%" 
-        height="600px" 
-        style="border:1px solid #ccc">
-      </iframe>
+        <article class="portfolio-project">
+          <h3>Document de synthèse</h3>
+          <p>
+            Tu peux consulter ici le tableau de synthèse lié aux réalisations professionnelles.
+          </p>
 
-      <a href="Tableau de synthese.xlsx" class="cta" download>
-        Télécharger le tableau de synthèse
-      </a>
-    </div>
-  </section>
+          <div class="file-preview">
+            <p>Le fichier Excel ne s’affiche pas toujours directement dans le navigateur. Le plus simple est de le consulter via le lien ci-dessous.</p>
+            <a href="Tableau de synthese.xlsx" class="cta">Ouvrir le tableau de synthèse</a>
+          </div>
+        </article>
+      </div>
+    </section>
 
-  <section class="section section-portfolio">
-    <h2>Vidéo de présentation</h2>
+    <section class="section">
+      <div class="container card">
+        <h2>Vidéo de présentation</h2>
 
-    <div class="portfolio-project">
-      <h3>Support vidéo</h3>
-      <p>
-        Ajoute ici ta vidéo de présentation de l’épreuve 5. Elle sera lisible directement depuis le site.
-      </p>
+        <article class="portfolio-project">
+          <h3>Support vidéo</h3>
+          <p>
+            Ajoute ici ta vidéo de présentation de l’épreuve 5. Elle sera lisible directement depuis le site.
+          </p>
 
-      <video controls width="100%" style="max-width: 900px; border-radius: 12px; border: 2px solid #a259e6;">
-        <source src="video/epreuve5.mp4" type="video/mp4">
-        Votre navigateur ne supporte pas la lecture vidéo HTML5.
-      </video>
-    </div>
-  </section>
+          <div class="video-wrapper">
+            <video controls width="100%">
+              <source src="video/epreuve5.mp4" type="video/mp4">
+              Votre navigateur ne supporte pas la lecture vidéo HTML5.
+            </video>
+          </div>
+        </article>
+      </div>
+    </section>
 
-  <footer>
+  </main>
+
+  <footer class="footer">
     <p>&copy; 2025 - Matthieu KLESPERT. Tous droits réservés.</p>
   </footer>
+
 </body>
 </html>
