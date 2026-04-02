@@ -2,283 +2,200 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Portfolio de Matthieu KLESPERT, étudiant BTS SIO SISR : présentation, parcours, compétences, réalisations professionnelles et contact.">
+  <meta name="description" content="Portfolio de Matthieu KLESPERT, étudiant BTS SIO SISR : présentation, compétences, réalisations professionnelles et contact.">
   <title>Matthieu Klespert - Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="header-brand">
-      <img src="avatar.jpg" alt="Avatar de Matthieu Klespert" class="avatar">
-      <div class="brand-text">
-        <strong>Matthieu KLESPERT</strong>
-        <span>BTS SIO SISR</span>
-      </div>
-    </div>
-
-    <nav class="site-nav">
+  <header>
+    <img src="avatar.jpg" alt="Avatar de Matthieu Klespert" class="avatar">
+    <nav>
       <ul>
-        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="index.html">Accueil</a></li>
         <li><a href="#profil">Profil</a></li>
         <li><a href="#parcours">Parcours</a></li>
         <li><a href="#competences">Compétences</a></li>
         <li><a href="realisations.html">Réalisations</a></li>
-        <li><a href="epreuve5.html">Épreuve 5</a></li>
-        <li><a href="#veille">Veille</a></li>
+        <li><a href="epreuve5.html">Epreuve 5</a></li>
+        <li><a href="#veille">Veille technologique</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
+  <section class="parallax section-blur-about" id="accueil">
+    <div class="parallax-content">
+      <h1>Matthieu KLESPERT</h1>
+      <h2>Étudiant BTS SIO SISR</h2>
+      <a href="#profil" class="cta">QUI SUIS-JE ?</a>
+    </div>
+  </section>
 
-    <section class="hero parallax" id="accueil">
-      <div class="parallax-content">
-        <p class="hero-kicker">Portfolio BTS SIO SISR</p>
-        <h1>Matthieu KLESPERT</h1>
-        <h2>Étudiant en informatique, réseaux et systèmes</h2>
-        <a href="#profil" class="cta">Découvrir mon profil</a>
-      </div>
-    </section>
+  <section class="section section-profil" id="profil">
+    <h2>Profil</h2>
+    <p>
+      Je m'appelle Matthieu KLESPERT, j'ai 20 ans et je suis en 1ère année de BTS SIO SISR au CNED.
+      J'ai choisi cette filière afin de devenir administrateur réseaux, un métier que mon père m'a fait découvrir
+      et que j'aimerais exercer plus tard. Depuis tout petit, j'ai toujours été derrière un ordinateur, ce qui m'a
+      permis d'avoir une compréhension rapide de l'environnement numérique. J'ai une petite âme créative et j'adore
+      entamer des projets, dont un qui concerne un site Web : Profile Gaming.
+    </p>
+  </section>
 
-    <section class="section section-profil" id="profil">
-      <div class="container">
-        <div class="section-heading">
-          <span class="section-label">À propos</span>
-          <h2>Profil</h2>
-        </div>
-
-        <div class="card">
-          <p>
-            Je m'appelle Matthieu KLESPERT, j'ai 20 ans et je suis en 1ère année de BTS SIO SISR au CNED.
-            J'ai choisi cette filière afin de devenir administrateur réseaux, un métier que mon père m'a fait découvrir
-            et que j'aimerais exercer plus tard. Depuis tout petit, j'ai toujours été derrière un ordinateur, ce qui m'a
-            permis d'avoir une compréhension rapide de l'environnement numérique. J'ai une petite âme créative et j'adore
-            entamer des projets, dont un qui concerne un site Web : Profile Gaming.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-parcours" id="parcours">
-      <div class="container">
-        <div class="section-heading">
-          <span class="section-label">Formation</span>
-          <h2>Parcours</h2>
-        </div>
-
-        <div class="timeline">
-          <article class="timeline-item">
-            <div class="timeline-year">2024</div>
-            <div class="timeline-content">
-              <h3>Université d’Orléans</h3>
-              <p>L1 Math/Info à Orléans.</p>
-            </div>
-          </article>
-
-          <article class="timeline-item">
-            <div class="timeline-year">2025 - 2026</div>
-            <div class="timeline-content">
-              <h3>CNED</h3>
-              <p>1ère et 2ème année de BTS SIO SISR à Vitry-aux-Loges.</p>
-            </div>
-          </article>
+  <section class="section section-parcours" id="parcours">
+    <h2>Parcours</h2>
+  
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-year">2024</div>
+        <div class="timeline-content">
+          <h3>Université d’Orléans - Orléans – L1 Math/Info</h3>
         </div>
       </div>
-    </section>
-
-    <section class="section section-competences" id="competences">
-      <div class="container">
-        <div class="section-heading">
-          <span class="section-label">Savoir-faire</span>
-          <h2>Compétences</h2>
+  
+      <div class="timeline-item">
+        <div class="timeline-year">2025 - 2026</div>
+        <div class="timeline-content">
+          <h3>CNED – Vitry-aux-Loges – 1ère et 2è année BTS SIO SISR</h3>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="card">
-          <p>
-            Compétences apprises lors de stages au Conseil Départemental du Loiret en 2021 et 2025,
-            d'études ou d'activités personnelles :
-          </p>
+  <section class="section section-competences" id="competences">
+    <h2>Compétences</h2>
 
-          <ul class="competences-list">
-            <li>Gestion de parc : OCS Inventory, GLPI</li>
-            <li>Support aux utilisateurs et gestion des tickets d'incident : GLPI</li>
-            <li>Réseau :
-              <ul>
-                <li>Configuration de switch / commutateur et de routeur Cisco / Aruba en ligne de commande (CLI)</li>
-                <li>Configuration de pare-feux de marque Fortinet (FG61)</li>
-                <li>Installation de switch Cisco / Aruba et de bornes WIFI D-Link</li>
-              </ul>
-            </li>
-            <li>Système et réseau :
-              <ul>
-                <li>Installation et configuration de base d'OS (Windows, Debian, Ubuntu)</li>
-                <li>Gestion des comptes et des groupes utilisateurs locaux : Windows 11, Debian, Ubuntu Desktop</li>
-                <li>Gestion des comptes, des groupes et des GPO dans un domaine Active Directory</li>
-                <li>Gestion de services d'impression et de sauvegarde : Microsoft Windows Server</li>
-              </ul>
-            </li>
-            <li>Installation du service Web : Apache 2 (Debian)</li>
-            <li>Installation de base de données : MariaDB (Debian), MySQL</li>
-            <li>Outils et management d’infrastructure :
-              <ul>
-                <li>Intégration, configuration et management de pare-feu via FortiOS, FortiManager et FortiAnalyzer</li>
-                <li>Maîtrise du logiciel HPE Intelligent Management Center pour la gestion de switchs Aruba</li>
-                <li>Maîtrise du logiciel Remote Desktop Manager pour la gestion de tout type d’équipements réseau</li>
-                <li>Maîtrise des outils : PuTTY, TFTP, BMC</li>
-              </ul>
-            </li>
+    <div class="competences-block">
+      <p>Compétences apprises lors de stages au Conseil Départemental du Loiret en 2021 et 2025, d'études ou d'activités personnelles :</p>
+      <ul class="competences-list">
+        <li>Gestion de parc : OCS Inventory, GLPI</li>
+        <li>Support aux utilisateurs et gestion des tickets d'incident : GLPI</li>
+        <li>Réseau :
+          <ul>
+            <li>Configuration de switch / commutateur et de routeur Cisco / Aruba en ligne de commande (CLI)</li>
+            <li>Configuration de pare-feux de marque Fortinet (FG61)</li>
+            <li>Installation de switch Cisco / Aruba et de bornes WIFI D-Link</li>
           </ul>
-        </div>
-
-        <div class="skills">
-          <div class="skill">
-            <div class="skill-top">
-              <span>Python</span><span>85%</span>
-            </div>
-            <div class="progressbar-wrapper"><div class="progressbar" style="width: 85%;"></div></div>
-          </div>
-          <div class="skill">
-            <div class="skill-top">
-              <span>C#</span><span>80%</span>
-            </div>
-            <div class="progressbar-wrapper"><div class="progressbar" style="width: 80%;"></div></div>
-          </div>
-          <div class="skill">
-            <div class="skill-top">
-              <span>HTML</span><span>75%</span>
-            </div>
-            <div class="progressbar-wrapper"><div class="progressbar" style="width: 75%;"></div></div>
-          </div>
-          <div class="skill">
-            <div class="skill-top">
-              <span>SQL</span><span>70%</span>
-            </div>
-            <div class="progressbar-wrapper"><div class="progressbar" style="width: 70%;"></div></div>
-          </div>
-          <div class="skill">
-            <div class="skill-top">
-              <span>CSS</span><span>60%</span>
-            </div>
-            <div class="progressbar-wrapper"><div class="progressbar" style="width: 60%;"></div></div>
-          </div>
-          <div class="skill">
-            <div class="skill-top">
-              <span>PHP</span><span>50%</span>
-            </div>
-            <div class="progressbar-wrapper"><div class="progressbar" style="width: 50%;"></div></div>
-          </div>
-          <div class="skill">
-            <div class="skill-top">
-              <span>JavaScript</span><span>30%</span>
-            </div>
-            <div class="progressbar-wrapper"><div class="progressbar" style="width: 30%;"></div></div>
-          </div>
-        </div>
-
-        <div class="card cv-card">
-          <h3>Mon CV</h3>
-          <iframe src="CV 2026 Matt.pdf" title="CV de Matthieu Klespert"></iframe>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-veille" id="veille">
-      <div class="container">
-        <div class="section-heading">
-          <span class="section-label">Suivi</span>
-          <h2>Veille technologique</h2>
-        </div>
-
-        <div class="card">
-          <p>
-            Je mets en place une veille technologique afin de rester informé des évolutions liées à
-            l’administration réseau, aux systèmes, à la cybersécurité et aux outils utilisés dans le cadre du BTS SIO SISR.
-          </p>
-
-          <h3>Dispositifs de veille</h3>
-          <ul class="veille-list">
-            <li>Flux RSS et sites spécialisés en informatique et cybersécurité.</li>
-            <li>Chaînes YouTube et tutoriels techniques.</li>
-            <li>Documentation officielle des outils et technologies utilisés.</li>
-            <li>Articles, forums et communautés techniques.</li>
-            <li>Suivi régulier des nouveautés liées aux systèmes, réseaux et outils d’administration.</li>
+        </li>
+        <li>Système et réseau :
+          <ul>
+            <li>Installation et configuration de base d'OS (Windows, Debian, Ubuntu)</li>
+            <li>Gestion des comptes et des groupes utilisateurs locaux : Windows 11, Debian, Ubuntu Desktop</li>
+            <li>Gestion des comptes, des groupes et des GPO dans un domaine Active Directory</li>
+            <li>Gestion de services d'impression et de sauvegarde : Microsoft Windows Server</li>
           </ul>
-
-          <h3>Objectifs de cette veille</h3>
-          <ul class="veille-list">
-            <li>Suivre les évolutions techniques utiles à mon futur métier.</li>
-            <li>Comparer les solutions et outils disponibles.</li>
-            <li>Identifier les bonnes pratiques et les nouvelles méthodes de travail.</li>
-            <li>Enrichir mes réalisations professionnelles et mon portfolio.</li>
+        </li>
+        <li>Installation du service Web : Apache 2 (Debian)</li>
+        <li>Installation de base de données : MariaDB (Debian), MySQL</li>
+        <li>Outils et management d’infrastructure :
+          <ul>
+            <li>Intégration, configuration et management de pare-feu via FortiOS, FortiManager et FortiAnalyzer</li>
+            <li>Maîtrise du logiciel HPE Intelligent Management Center pour la gestion de switchs Aruba</li>
+            <li>Maîtrise du logiciel Remote Desktop Manager pour la gestion de tout type d’équipements réseau (switchs, routeurs, pare-feu)</li>
+            <li>Maîtrise des outils : PuTTY, TFTP, BMC</li>
           </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="skills">
+      <div class="skill"><span>Python</span><div class="progressbar-wrapper"><div class="progressbar" style="width: 85%;"></div></div></div>
+      <div class="skill"><span>C#</span><div class="progressbar-wrapper"><div class="progressbar" style="width: 80%;"></div></div></div>
+      <div class="skill"><span>HTML</span><div class="progressbar-wrapper"><div class="progressbar" style="width: 75%;"></div></div></div>
+      <div class="skill"><span>SQL</span><div class="progressbar-wrapper"><div class="progressbar" style="width: 70%;"></div></div></div>
+      <div class="skill"><span>CSS</span><div class="progressbar-wrapper"><div class="progressbar" style="width: 60%;"></div></div></div>
+      <div class="skill"><span>PHP</span><div class="progressbar-wrapper"><div class="progressbar" style="width: 50%;"></div></div></div>
+      <div class="skill"><span>JavaScript</span><div class="progressbar-wrapper"><div class="progressbar" style="width: 30%;"></div></div></div>
+    </div>
+
+    <h3>Mon CV</h3>
+    <iframe src="CV 2026 Matt.pdf" width="100%" height="600px" style="border:1px solid #ccc;"></iframe>
+  </section>
+
+  <section class="section section-veille" id="veille">
+    <h2>Veille technologique</h2>
+    <div class="veille-block">
+      <p>
+        Je mets en place une veille technologique afin de rester informé des évolutions liées à
+        l’administration réseau, aux systèmes, à la cybersécurité et aux outils utilisés dans le cadre du BTS SIO SISR.
+      </p>
+  
+      <h3>Dispositifs de veille</h3>
+      <ul class="veille-list">
+        <li>Flux RSS et sites spécialisés en informatique et cybersécurité.</li>
+        <li>Chaînes YouTube et tutoriels techniques.</li>
+        <li>Documentation officielle des outils et technologies utilisés.</li>
+        <li>Articles, forums et communautés techniques.</li>
+        <li>Suivi régulier des nouveautés liées aux systèmes, réseaux et outils d’administration.</li>
+      </ul>
+  
+      <h3>Objectifs de cette veille</h3>
+      <ul class="veille-list">
+        <li>Suivre les évolutions techniques utiles à mon futur métier.</li>
+        <li>Comparer les solutions et outils disponibles.</li>
+        <li>Identifier les bonnes pratiques et les nouvelles méthodes de travail.</li>
+        <li>Enrichir mes réalisations professionnelles et mon portfolio.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section-contact section-blur-contact" id="contact">
+    <h2>Contactez-moi</h2>
+    <p>N'hésitez pas à me contacter, je vous répondrai avec plaisir.</p>
+
+    <form class="contact-form" method="post" action="#">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="nom">Nom *</label>
+          <input type="text" id="nom" name="nom" required>
+        </div>
+        <div class="form-group">
+          <label for="prenom">Prénom</label>
+          <input type="text" id="prenom" name="prenom">
         </div>
       </div>
-    </section>
 
-    <section class="section section-contact section-blur-contact" id="contact">
-      <div class="container">
-        <div class="section-heading">
-          <span class="section-label">Me joindre</span>
-          <h2>Contact</h2>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="email">E-Mail *</label>
+          <input type="email" id="email" name="email" required>
         </div>
-
-        <div class="contact-grid">
-          <form class="contact-form" method="post" action="#">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="nom">Nom *</label>
-                <input type="text" id="nom" name="nom" required>
-              </div>
-              <div class="form-group">
-                <label for="prenom">Prénom</label>
-                <input type="text" id="prenom" name="prenom">
-              </div>
-            </div>
-
-            <div class="form-row">
-              <div class="form-group">
-                <label for="email">E-Mail *</label>
-                <input type="email" id="email" name="email" required>
-              </div>
-              <div class="form-group">
-                <label for="telephone">Téléphone</label>
-                <input type="tel" id="telephone" name="telephone">
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="objet">Objet *</label>
-              <input type="text" id="objet" name="objet" required>
-            </div>
-
-            <div class="form-group">
-              <label for="message">Message *</label>
-              <textarea id="message" name="message" rows="6" required></textarea>
-            </div>
-
-            <p class="form-info">* Champ obligatoire</p>
-
-            <label class="consent">
-              <input type="checkbox" required>
-              En soumettant ce formulaire, j'accepte que mes données personnelles soient utilisées pour me recontacter.
-            </label>
-
-            <button type="submit" class="cta">Envoyer</button>
-          </form>
-
-          <aside class="contact-infos card">
-            <p><strong>matthieu@klespert.fr</strong></p>
-            <p>07 87 26 93 52</p>
-            <p>45530 Vitry-aux-Loges</p>
-          </aside>
+        <div class="form-group">
+          <label for="telephone">Téléphone</label>
+          <input type="tel" id="telephone" name="telephone">
         </div>
       </div>
-    </section>
 
-  </main>
+      <div class="form-group">
+        <label for="objet">Objet *</label>
+        <input type="text" id="objet" name="objet" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+      </div>
+
+      <p class="form-info">* Champ obligatoire</p>
+
+      <div class="form-group">
+        <label class="consent">
+          <input type="checkbox" required>
+          En soumettant ce formulaire, j'accepte que mes données personnelles soient utilisées pour me recontacter.
+        </label>
+      </div>
+
+      <button type="submit" class="cta">Envoyer</button>
+    </form>
+
+    <div class="contact-infos">
+      <p><strong>matthieu@klespert.fr</strong></p>
+      <p>07 87 26 93 52</p>
+      <p>45530 Vitry-aux-Loges</p>
+    </div>
+  </section>
 
   <footer>
     <p>&copy; 2025 - Matthieu KLESPERT. Tous droits réservés.</p>
